@@ -1,0 +1,686 @@
+/* 
+font-family: "Tangerine", cursive;
+
+font-family: "Architects Daughter", cursive;
+
+font-family: "Creepster", system-ui;
+
+font-family: "Handlee", cursive;
+
+    color: rgb(229, 140, 77);
+
+font-family: "Comic Neue", cursive;
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+    font-family: "Comic Neue", cursive;
+
+  font-size: 3.2rcap;
+
+}
+
+.herobg {
+  height: auto;
+  width: 100%;
+  background-color: #142850;
+}
+nav .left
+{
+    width: 50%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.7%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+nav .right a{
+
+    text-decoration: none;
+    font-size: 1.7rcap;
+    margin: 0 12px;
+    transition: color .2s ease-in-out;
+    font-family: "Comic Neue", cursive;
+}
+nav .right a:hover{
+    color: rgba(123, 184, 244, 0.838);
+}
+label{
+    display: none;
+}
+#check{
+    display: none;
+}
+#icon{
+    display: none;
+
+}
+#close{
+    display: none;
+}
+.maindiv h1 {
+    display: inline-block;
+
+}
+#textanimate{
+    white-space: inherit;
+    animation: typing 4s steps(40,end) infinite
+}
+@keyframes tying {
+    from{
+        width: 0;
+
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    nav .left{
+        width: max-content;
+    }
+    nav .right a{
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    nav .left{
+        width: 70%;
+        padding: 1.5%;
+    }
+    nav .right{
+        display: block;
+        position: absolute;
+        top: 100px;
+        overflow: hidden;
+        z-index: 1;
+        height: auto;
+        right: -100%;
+        width: 80%;
+        background-color:#2f4778 ;
+        padding: 20%;
+
+        transition: .4s ease-in-out;
+
+    }
+    nav .right a{
+        display: block;
+        text-align: center;
+        line-height: 80px;
+    }
+    #bar{
+        display: block;
+    }
+    #icon{
+        display: block;
+        font-size: 2.3rcap;
+        float: right;
+    }
+    #check:checked ~ #icon #bar{
+        display: none;
+    }
+    #check:checked ~ #icon #close{
+        display: block;
+    }
+    #check:checked ~  .right{
+        right:  0%;
+        display: block;
+        height: auto;
+        width: 80%;
+        border-radius: 30px;
+
+    }
+
+
+}  
+
+.maindiv{
+    width: 65%;
+    padding: 4%;
+}
+
+.maindiv #head1{
+    line-height: 4cap;
+    font-size: 2rcap;
+    font-family: 'Courier New', Courier, monospace;
+    color: #7fe5fb;
+}
+.maindiv :nth-child(3){
+    color: rgba(255, 255, 255, 0.922);
+    font-family: "Handlee", cursive;
+    font-size: 1.3rcap;
+
+}
+.btn{
+    display: flex;
+    width: 40%;
+    padding-top: 5%;
+    justify-content: space-evenly
+}
+.hire{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    margin: 0 5px;
+    border: 2px solid #7fe5fb;
+    border-radius: 15px;
+    padding: 5%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+.hire::after{
+    content: "";
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    left: -100%;
+    z-index: -1;
+    background-color:#7fe5fb;
+  transition: 0.4s ease;
+
+
+}
+.hire:hover::after{
+    left: 0%;
+}
+.hire:hover::after .hire a{
+    color: black;
+}
+.hire a{
+    text-decoration: none;
+    color: #29b9d6;
+
+
+}
+.hire:hover a{
+    color: #142850;
+}
+
+.socials{
+    display: flex;
+    padding: 5% 0;
+
+}
+.socials p{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #29b9d6;
+    text-align: center;
+    margin:  0 1%;
+    padding: 13px;
+    transition: .3s ease-in-out;
+
+}
+.socials p i{
+    color: #5adbf5;
+}
+.socials p:hover{
+    background-color: #29b9d6;
+}
+
+.socials p:hover i{
+    color: white;
+}
+.maindiv h1{
+    font-size: 4rcap;
+}
+
+@media screen and (max-width:640px){
+    .maindiv{
+        width: 90%;
+        padding: 20% 5%;
+        margin: auto;
+        text-align: center;
+    }
+    .maindiv h1{
+        font-size: 2.8rcap;
+    }
+    .maindiv #head1{
+        line-height: 50px;
+        font-size: 1.5rcap;
+        
+    }
+    .maindiv .btn{
+        width: 90%;
+        padding: 10% 0 0;
+        
+    }
+    .btn{
+        margin: auto
+    }
+    
+    .socials p{
+        margin: auto
+    }
+
+
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.aboutbg{
+    background: #27496D;
+    height: auto;
+    width: 100%;
+}
+
+.head{
+    text-align: center;
+    padding: 8% 0 0;
+
+}
+.head h1{
+    font-size: 4rcap;
+
+
+}
+ b{
+    color: #83eaff;
+
+}
+
+.mypic{
+    background: url(./image/IMG_20230528_001320_793.jpg);
+    height: 533px;
+    width: 35%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+
+}
+.picortext{
+
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin: 0 5%;
+    flex-wrap: wrap;
+
+    padding: 5% 0;
+}
+.text{
+    width: 60%;
+    font-family: "Handlee", cursive;
+    /* font-weight: 100; */
+
+}
+/* .text p{
+    width: 60%;
+} */
+
+@media screen and (max-width:1000px){
+    .picortext{
+        align-items: center;
+    }
+    .text p{
+        font-size: 1.4rcap;
+    }
+}
+
+
+
+@media screen and (max-width:740px){
+    .mypic{
+        height: 460px;
+        width: 100%;
+        margin: auto;
+        border-radius: 0px;
+    }
+    .text{
+        width: 90%;
+        padding: 10% 0;
+    }
+    
+    .head h1{
+        font-size: 3rcap;
+        padding: 4%;
+    }
+    .head{
+        padding: 15% 0 0 ;
+    }
+    /* #educ{
+        padding: 15% 0 0;
+    } */
+
+
+}
+
+.educbg{
+    height: auto;
+    background: #1A374D;
+}
+.edu1{
+    height: auto;
+    width: 60%;
+    box-shadow: 1px 2px 24px 0px rgba(121,156,233,0.75);
+    -webkit-box-shadow: 1px 2px 24px 0px rgba(121,156,233,0.75);
+    -moz-box-shadow: 1px 2px 24px 0px rgba(121,156,233,0.75);
+
+    border-radius: 10px;
+    padding: 2%;
+    margin: 1.5% 0;
+    transition: all ease-in .4s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.edu1 h4,i{
+    color: #29b9d6;
+}
+.edu1 h4{
+    line-height: 30px;
+}
+.edu1 h3{
+    font-family: cursive;
+}
+.educdetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    flex-direction: column;
+}
+.edu1:hover{
+    transform: scale(1.07);
+    background-color: #29b9d6;
+
+}
+
+.edu1:hover h4{
+    color: black;
+}
+.edu1:hover h4 i{
+    color: black;
+}
+.edu1:hover h3{
+    color: black;
+}
+@media screen and (max-width:800px) {
+.edu1{
+    width: 80%;
+    padding: 10%;
+    margin: 5% 10%;
+}
+.edutext h2{
+    font-size: 2rcap;
+}
+    
+}
+
+/* skills */
+.skilbg
+{
+    background-color: #102434f0;
+    height: auto;
+
+}
+
+.skil1{
+    height: 50px;
+    width: 60%;
+    border: 1px solid #29b9d6;
+    border-radius: 5px;
+    padding: 0.4%;
+    margin: 1% 0;
+}
+#css{
+    /* height: 40px; */
+    width: 85%;
+
+
+
+}
+#js{
+    width: 60%;
+}
+#java{
+    width: 55%;
+}
+#rj{
+    width: 45%;
+}
+#as{
+    width: 70%;
+}
+#msof{
+    width: 94%;
+}
+.skiltext{
+    height: 40px;
+    width: 90%;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #5adbf5;
+    padding: 1%;
+
+}
+.skil1 p{
+    float: right;
+    margin-top: 1% ;
+    font-size: 1.8rcap;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 7%;
+}
+
+@media screen and (max-width:800px) {
+    .skil1{
+        width: 90%;
+        padding: .8%;
+        
+    }
+    .skiltext{
+        width: 86%;
+    }
+    #css{
+        width: 78%;
+    }
+    #msof{
+        width: 90%;
+    }
+    .skil1 p{
+        font-size: 1.5rcap;
+    }
+    
+
+}
+/* project */
+.projbg{
+    background: #102434e0;
+    height: auto;
+
+}
+
+.proj1{
+    height: 350px;
+    width: 300px;
+    /* background-color:#27496D ; */
+    overflow: hidden;
+    
+}
+.projtext{
+
+    height: 450px;
+    width: 300px;
+    transition: all ease-in-out .3s;
+    /* margin: 0 2%; */
+
+    /* background-color:hsl(206, 98%, 65%) ; */
+}
+#hire{
+/* display: grid; */
+    left: 25%;
+    padding: 10%;
+    text-align: center;
+    /* width: 100%; */
+
+}
+#btn{
+    width: 50%;
+}
+.projtext p{
+    opacity: 0.7;
+    font-size: 1.3rcap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.proj1:hover .projtext{
+    transform: translateY(-26%);
+}
+.proflex{
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.contactbg{
+    background: #102434f0;
+    height: auto;
+}
+
+.inputs{
+    padding: 3%;
+}
+.allinput{
+    height: auto;
+    width: 830px;
+    border: 1px solid #29b9d6;
+    padding: 4%;
+    border-radius: 5px;
+    margin: auto;
+}
+input{
+    background: none;
+    border: 1px solid #29b9d6;
+    padding: 2%;
+    border-radius: 5px;
+
+}
+::placeholder{
+    color: #83eaff67;
+}
+input:focus{
+    outline: none;
+}
+textarea{
+    background: none;
+    border: 1px solid #29b9d6;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 0 7px;
+
+
+}
+textarea:focus
+{
+    outline: none;
+}
+.finput{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#fname,#lname{
+    width: 45%;
+    margin: 0 1%;
+
+}
+#email{
+    width: 98%;
+    margin:  3% 7px;
+
+}
+
+#btn-con{
+    width: 40%;
+    /* margin: auto; */
+}
+#btn-1{
+    margin: auto;
+    /* width: ; */
+}
+@media screen and (max-width:800px) {
+    .proj1{
+    margin: 10% 0;
+    padding: 2%;
+
+    }
+    .allinput{
+        width: 330px;
+        padding: 5%;
+     
+    }
+    textarea{
+        width: 280px;
+    }
+   
+    input{
+        padding: 4%;
+    }
+    #fname,#lname, #email{
+        width: 100%;
+        margin: 6% 0;
+    
+    }
+    .inputs{
+        padding: 0 0 20%;
+    }
+    #btn-1{
+        width: 100%;
+    }
+    
+    
+}
+.ftbg{
+    background: #0B2447;
+}
+.center{
+    padding: 2%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center p a{
+    text-decoration: none;
+    opacity: 0.8;
+
+}
+.reveal {
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
